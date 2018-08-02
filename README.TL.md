@@ -1,3 +1,7 @@
 1. npm install -g @angular/cli@6.0.8
 2. ng new conFusion --style=scss
-3. 
+3. npm install @angular/material@6.2.1 --save
+4. npm install --save @angular/animations@6.0.6
+5. npm install --save hammerjs@2.0.8
+6. npm install @angular/cdk@6.2.1 --save
+7. npm install --save @angular/flex-layout@6.0.0-beta.16
