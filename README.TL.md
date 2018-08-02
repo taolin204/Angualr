@@ -5,3 +5,4 @@
 5. npm install --save hammerjs@2.0.8
 6. npm install @angular/cdk@6.2.1 --save
 7. npm install --save @angular/flex-layout@6.0.0-beta.16
+8. ng generate component menu
