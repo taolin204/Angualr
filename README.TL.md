@@ -15,3 +15,5 @@
 15. ng generate component home
 16. ng generate module app-routing
 17. ng generate service services/promotion
+18. ng generate service services/leader
+19. ng g component login
