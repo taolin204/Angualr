@@ -1,8 +1,10 @@
 import { Dish } from './dish';
 export const DISHES: Dish[] = [
     {
+        id: 0,
         name: 'Uthappizza',
         image: '/assets/images/uthappizza.png',
+        featured: true,
         category: 'mains',
         label: 'Hot',
         price: '4.99',
@@ -39,11 +41,13 @@ export const DISHES: Dish[] = [
                 date: '2011-12-02T17:57:28.556094Z'
             }
         ]
-},
+    },
     {
+        id: 1,
         name: 'Zucchipakoda',
         image: '/assets/images/zucchipakoda.png',
         category: 'appetizer',
+        featured: false,
         label: '',
         price: '1.99',
         description: 'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
@@ -78,11 +82,13 @@ export const DISHES: Dish[] = [
                 date: '2011-12-02T17:57:28.556094Z'
             }
         ]
-},
+    },
     {
+        id: 2,
         name: 'Vadonut',
         image: '/assets/images/vadonut.png',
         category: 'appetizer',
+        featured: false,
         label: 'New',
         price: '1.99',
         description: 'A quintessential ConFusion experience, is it a vada or is it a donut?',
@@ -120,9 +126,11 @@ export const DISHES: Dish[] = [
         ]
     },
     {
+        id: 3,
         name: 'ElaiCheese Cake',
         image: '/assets/images/elaicheesecake.png',
         category: 'dessert',
+        featured: false,
         label: '',
         price: '2.99',
         description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
