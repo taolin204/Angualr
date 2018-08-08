@@ -38,6 +38,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,6 +69,7 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     MatDialogModule,
     FlexLayoutModule,
+    MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule
   ],
