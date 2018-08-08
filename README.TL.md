@@ -8,3 +8,6 @@
 8. ng generate component menu
 9. ng generate component dishdetail
 10. ng generate service services/dish
+11. npm install font-awesome@4.7.0 --save
+12. ng generate component header
+13. ng generate component footer
