@@ -11,3 +11,7 @@
 11. npm install font-awesome@4.7.0 --save
 12. ng generate component header
 13. ng generate component footer
+14. ng generate component about
+15. ng generate component home
+16. ng generate module app-routing
+
