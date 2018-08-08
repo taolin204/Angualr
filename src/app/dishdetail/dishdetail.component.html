@@ -21,7 +21,7 @@
   </div>
 
 
-  <div fxFlex="40">
+  <div fxFlex="40" *ngIf="dish">
     <h3>Comments</h3>
     <mat-list>
       <mat-list-item *ngFor="let comment of dish.comments">
@@ -35,15 +35,5 @@
 
       </mat-list-item>
     </mat-list>
-    <!-- <mat-grid-list cols="1" rowHeight="200px">
-      <mat-grid-tile *ngFor="let comment of dish.comments">
-        <h3 matLine>{{comment.comment}} </h3> <br/>
-        <p matLine>
-          <span> {{comment.rating}} Stars
-            <br/> </span>
-          <span class="demo-2"> -- {{comment.author}} {{comment.rating | date }} </span>
-        </p>
-      </mat-grid-tile>
-    </mat-grid-list> -->
   </div>
 </div>
