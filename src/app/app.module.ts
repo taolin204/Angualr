@@ -43,7 +43,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { baseURL } from './shared/baseurl';
 import {ProcessHTTPMsgService} from './services/process-httpmsg.service';
- 
+import { RestangularModule, Restangular } from 'ngx-restangular';
+import { RestangularConfigFactory } from './shared/restConfig';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,7 +79,8 @@ import {ProcessHTTPMsgService} from './services/process-httpmsg.service';
     FlexLayoutModule,
     MatProgressSpinnerModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RestangularModule.forRoot(RestangularConfigFactory)
   ],
   providers: [
     ProcessHTTPMsgService,

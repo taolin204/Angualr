@@ -19,3 +19,5 @@
 19. ng g component login
 20. npm install json-server -g
 21. ng generate service services/ProcessHTTPMsg
+23. npm install --save ngx-restangular@3.0.0
+
