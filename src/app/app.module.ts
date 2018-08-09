@@ -18,7 +18,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import 'hammerjs';
 
@@ -41,6 +41,9 @@ import { LoginComponent } from './login/login.component';
 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
+import { baseURL } from './shared/baseurl';
+import {ProcessHTTPMsgService} from './services/process-httpmsg.service';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +59,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   imports: [
     BrowserModule,
     HttpModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatListModule,
@@ -76,9 +80,11 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ReactiveFormsModule
   ],
   providers: [
+    ProcessHTTPMsgService,
     DishService,
     PromotionService,
-    LeaderService
+    LeaderService,
+    {provide: 'BaseURL', useValue: baseURL}
   ],
   entryComponents: [
     LoginComponent

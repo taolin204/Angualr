@@ -17,3 +17,5 @@
 17. ng generate service services/promotion
 18. ng generate service services/leader
 19. ng g component login
+20. npm install json-server -g
+21. ng generate service services/ProcessHTTPMsg
