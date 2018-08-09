@@ -20,4 +20,6 @@
 20. npm install json-server -g
 21. ng generate service services/ProcessHTTPMsg
 23. npm install --save ngx-restangular@3.0.0
+24. ng g directive directives/highlight
+
 
