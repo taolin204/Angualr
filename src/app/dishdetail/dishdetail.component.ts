@@ -86,7 +86,7 @@ export class DishdetailComponent implements OnInit {
   onSubmit() {
     this.feedback = this.commentForm.value;
     console.log(this.feedback);
-    this.feedback.date = new Date().toLocaleString();
+    this.feedback.date = new Date().toISOString();
     console.log(this.feedback.date);
     this.dish.comments.push(this.feedback);
     console.log(this.feedback);

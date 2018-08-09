@@ -51,7 +51,7 @@
           <span> {{comment.rating}} Stars </span>
         </p>
         <p matLine>
-          <span> -- {{comment.author}} {{comment.rating | date }} </span>
+          <span> -- {{comment.author}} {{comment.date | date }} </span>
         </p>
 
       </mat-list-item>
@@ -83,6 +83,6 @@
         <mat-error *ngIf="formErrors.comment">{{formErrors.comment}}</mat-error>
       </mat-form-field>
     </p>
-    <button type="submit" mat-button class="background-primary text-floral-white">Submit</button>
+    <button type="submit" mat-button class="background-primary text-floral-white" [disabled]="fform.form.invalid">Submit</button>
   </form>
 </div>
